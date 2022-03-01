@@ -34,7 +34,7 @@ resivir(10,5,function(n1,n2,total_suma){
 })*/
 
 
-function recibir (nombre , edad , contraseña , callBack){
+/*function recibir (nombre , edad , contraseña , callBack){
     setTimeout(function(){
        let  datos= {
         nombre : nombre,
@@ -54,7 +54,29 @@ recibir("simon",18,"simon123 ",function(datos){
         console.log("su edad es : " + datos.edad +" es mayor de edad , si puede acceder ")
     }
     
+})*/
+
+function recibir(n1,n2,n3,n4,n5,callBack){
+
+    setTimeout(function(){
+        let almacenar_Numero
+
+    almacenar_Numero=[n1,n2,n3,n4,n5]
+
+    callBack(almacenar_Numero)
+    })
+}
+
+recibir(1,1,1,1,1,function(numeros){
+    let contador=0
+    numeros.forEach(function(numero){
+        contador=contador + numero
+        
+    })
+      console.log("la saumatoria es : "+contador)  
+
 })
+
 
 
 
